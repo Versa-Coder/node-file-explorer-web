@@ -1,0 +1,8 @@
+<% if(typeof error !=='undefined'){ %>
+<div class="container-fluid">
+  <div class="alert alert-danger">
+    <strong>Error occurred</strong>
+    <div><%- error ?? '' %></div>
+  </div>
+</div>
+<% } %>

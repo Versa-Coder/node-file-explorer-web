@@ -1,0 +1,20 @@
+.d-none {
+  display: none;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.input-suggestion {
+  font-size: 10px;
+  opacity: 0.6;
+  float: right;
+  margin-right: 9px;
+}
+
+.each-file {
+  border: 1px solid rgb(204, 192, 192);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}

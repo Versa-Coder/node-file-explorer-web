@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <div class="row d-flex">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <form action="/" name="filterFiles">
+          <fieldset>
+            <legend>Controllers</legend>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="input-group">
+                  <span class="input-group-text">Add Directory</span>
+                  <input
+                    type="text"
+                    class="input-group-text form-control"
+                    placeholder="c://dir/something"
+                    name="dir"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="input-group">
+                  <span class="input-group-text">Choose Extensions</span>
+                  <input
+                    type="text"
+                    class="input-group-text form-control"
+                    placeholder="eg: png, svg, jpeg"
+                    name="ext"
+                  />
+                </div>
+                <span class="input-suggestion">Seperate by comma(,)</span>
+              </div>
+              <div class="col-sm-3">
+                <div class="input-group">
+                  <span class="input-group-text">Filter texts</span>
+                  <input
+                    type="text"
+                    class="input-group-text form-control"
+                    placeholder="eg: computer, software"
+                    name="contains"
+                  />
+                </div>
+                <span class="input-suggestion">Seperate by comma(,)</span>
+              </div>
+              <div class="col-sm-2">
+                <div class="row">
+                  <div class="col-6">
+                    <button class="btn btn-primary" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button type="reset" class="btn btn-secondary">
+                      Reset
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

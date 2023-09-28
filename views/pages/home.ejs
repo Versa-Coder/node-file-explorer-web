@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Viewer</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="module" src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <% if(typeof error !=='undefined'){ %>
+        <div class="col-sm-12"><%- include('../partials/error') %></div>
+        <% } %>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <%- include("../partials/primary-filter") %>
+        </div>
+      </div>
+    </div>
+    <% if(typeof info !=='undefined'){ %>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12"><%- include("../partials/list") %></div>
+      </div>
+    </div>
+    <% } %>
+  </body>
+</html>
